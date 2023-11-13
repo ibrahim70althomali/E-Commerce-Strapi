@@ -1,0 +1,72 @@
+.navbar{
+    height: 60px;
+    background-color:#27292a;
+    border-radius: 13px;
+
+}
+.wrapper{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.item{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #eeee;
+}
+.center{
+ font-size:30px;
+ /* مسافه بين الحروف */
+ color: #eeee; 
+ }
+.center span{
+  font-size: 23px;
+  color:  #ec6090;
+ }
+.right {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+/* .link{
+    color: #920404;
+    text-decoration: none;
+
+} */
+
+.icons
+  {
+   display: flex;
+   gap: 15px;
+   color: #777;
+   cursor: pointer;
+  }
+
+  .cartIcon
+  {
+    position: relative;
+  }
+
+.cartIcon span {
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ec6090;
+    color: #080808;
+    position: absolute;
+    right: -9px;
+    top: -8px;
+   /* االارقم بحطه في نص */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

@@ -1,0 +1,95 @@
+    /* --color-dark: #27292a;
+    --color-light:#fff;
+    --color-primary: #ec6090;
+    --color-darkest:#1f2122; */
+
+    /////////////
+    <div className="left_Product">
+      <div className="image_Product">
+        
+           
+        <img
+         src={ process.env.REACT_APP_UPLOAD_URL
+          + data?.attributes?.img?.data?.attributes?.url}
+           alt=""
+             onClick={ (ele) => setSelectImg("img")}/>
+        <img 
+        src={ process.env.REACT_APP_UPLOAD_URL + 
+        data?.attributes?.img2?.data?.attributes?.url} 
+        alt="" 
+        onClick={ (ele) => setSelectImg("img2")}/>
+      </div>
+       <div className="mainImg_Product">
+         <img 
+         src={ process.env.REACT_APP_UPLOAD_URL +data?.attributes[selectImg]?.data.attributes?.url}
+         
+          alt="" />
+       </div>
+    </div>
+
+
+
+
+
+    <div className="right_Product">
+      <h1>Title</h1 >
+      <span className='right_Product_price'>$199</span>
+      <p className='right_Product_p'>Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit.
+          Odio debitis necessitatibus nulla
+          eius sint consequuntur illum sunt.
+          Vitae magni, nesciunt quae consequuntur
+          maiores, necessitatibus recusandae,
+          velit ipsa magnam debitis deserunt?
+          </p>
+          <div className="quantity">
+            <button onClick={()=>setQuantity(ele=>(ele=== 0 ? 0:ele - 1))}>-</button>
+            {quantity}
+            <button onClick={()=>setQuantity(ele=>ele+1)}>+</button>
+          
+          </div>
+
+
+          <button className="add_Product"  onClick={()=>dispatch(addToCart(
+             
+             {
+             id:data.id,
+             title:data.attributes.title,
+             desc:data.attributes.desc,
+             price:data.attributes.price,
+             img:data.attributes.img.data.attributes.url,
+            quantity,
+             }  
+          ))}>
+           <AddShoppingCartOutlinedIcon />
+           Add To Caet
+          </button>
+
+
+          <div className="link__Product">
+            <div className="itme_Product">
+              <FavoriteBorderOutlinedIcon />
+              Add to wish list
+            </div>
+            <div className="itme_Product">
+              <BalanceOutlinedIcon />
+              add to compare
+            </div>
+          </div>
+           
+            <div className="info">
+            <span>Vendor: polp </span>
+            <span>product Type: T-shirt</span>
+            <span>Tag: T-shirt, Women, Top</span>
+            <hr />
+            </div>
+            
+           
+           
+              <div className="details">
+              <span>DESCRIPTION</span>
+              <span>ADDITIONAL INFORMATION</span>
+            
+              <span>FAQ</span>
+              </div>
+               </div> 

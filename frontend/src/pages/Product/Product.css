@@ -1,0 +1,143 @@
+.Product{
+  padding: 20px 50px;  
+  display: flex;
+  gap: 50px;
+  background-color: #27292a;
+  padding: 20px 20px 20px  20px;
+   margin-top: 20px ;
+   margin-bottom: 20px;
+   border-radius: 13px;
+}
+
+.left_Product{
+display: flex;
+flex: 1;
+gap: 20px;
+background-color: #1f2122;
+padding: 20px 20px 20px  20px;
+border-radius: 13px;
+}
+
+.left_Product .image_Product{
+flex: 1;
+
+}
+.left_Product .image_Product img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    
+
+    }
+.left_Product .mainImg_Product{
+flex: 5;
+}
+.left_Product .mainImg_Product img{
+
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    border-radius: 13px;
+
+}
+.right_Product{
+flex:1  ;
+display: flex;
+flex-direction: column;
+gap: 30px;  
+color: #eeee;
+
+}
+.right_Product_price{
+    font-size: 30px;
+    color: #eeee;
+    font-weight: 500;
+
+}
+.right_Product_p{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   color: #eeee;
+}
+.quantity button 
+{
+    font-size: 30px !important;
+    font-weight: 500;
+    color: #eeee !important;
+    border-radius: 15px !important;
+    padding: 4px 60px!important;
+    letter-spacing: 0.5px!important;
+    transition: all 0.3s!important;
+    background-color: #1f2122 !important;
+    cursor: pointer;
+  
+  }
+
+
+
+
+.add_Product{
+    width: 250px;
+    padding:  10px;
+    background-color: #1f2122;
+    color: #efe2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+   font-weight: 500;
+  
+   
+
+}
+
+.link__Product{
+    display: flex;
+    gap: 20px;
+   
+      color: #eeee;
+}
+.itme_Product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #eeee;
+    font-size: 16px;
+     
+
+}
+.info{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     color: gray;
+     font-style: 14px;
+     margin-top: 30px;
+}
+.info hr {
+width: 100%;
+border: 1px solid #ec6090;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    color:gray;
+    font-style: 14px;
+    margin-top: 30px;
+    justify-content: center;
+}
